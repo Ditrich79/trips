@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Blog(models.Model):
@@ -19,6 +20,9 @@ class Blog(models.Model):
     def __str__(self):
         return self.title
 
+    def get_absolute_url(self):
+        return reverse('article', kwargs={'article_slug': self.slug})
+
     class Meta:
         verbose_name = 'статью'
         verbose_name_plural = 'Статьи'
@@ -31,6 +35,9 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('category', kwargs={'cat_slug': self.slug})
 
     class Meta:
         verbose_name = 'категорию'
