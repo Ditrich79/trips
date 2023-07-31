@@ -1,9 +1,12 @@
 from django.shortcuts import render
 from .models import *
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
+from django.urls import reverse_lazy
+from .forms import *
+
 
 menu = [
-    {'title': 'Добавить статью', 'url_name': 'index'},
+    {'title': 'Добавить статью', 'url_name': 'add_article'},
     {'title': 'Войти', 'url_name': 'index'},
 ]
 
@@ -51,4 +54,16 @@ class BlogCategory(ListView):
         context['title'] = 'Категория - ' + str(context['posts'][0].cat)
         context['menu'] = menu
         context['cat_selected'] = context['posts'][0].cat_id
+        return context
+
+
+class AddArticle(CreateView):
+    form_class = AddPostForm
+    template_name = 'blog/addarticle.html'
+    success_url = reverse_lazy('index')
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Добавление статьи'
+        context['menu'] = menu
         return context
