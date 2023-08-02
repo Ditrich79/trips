@@ -173,3 +173,22 @@ a:hover{
     color: antiquewhite;
     background-color: darkblue;
 }
+.form-input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form-button{
+    width: 100%;
+    border: 2px solid darkblue;
+    background: antiquewhite;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form-button:hover{
+    background: darkgreen;
+}
+form label{
+    font-size: 18px;
+}
