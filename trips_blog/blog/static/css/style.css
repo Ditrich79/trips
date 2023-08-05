@@ -51,8 +51,9 @@ a:hover{
     flex-basis: 65%;
 }
 .last{
-    flex-basis: 30%;
+    flex-basis: 40%;
     text-align: right;
+    
 }
 .sidebar ul{
     width: 260px;
@@ -191,4 +192,23 @@ a:hover{
 }
 form label{
     font-size: 18px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+.pagination .page-num-selected{
+    padding: 20px;
+    background: lightskyblue;
+    color: darkblue;
+}
+.pagination a{
+    padding: 20px;
+    background: darkblue;
+    display: block;
+    color: antiquewhite;
+}
+.page-num{
+    margin: 5px;
+    font-weight: bold;
 }
