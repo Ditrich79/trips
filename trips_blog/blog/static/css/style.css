@@ -30,7 +30,7 @@ ul{
     padding: 0;
 }
 a{
-    color: antiquewhite;
+    color: grey;
     padding: 20px;
     text-decoration: none;
 }
@@ -38,7 +38,7 @@ a:hover{
     color: darkgreen;
 }
 .header{
-    background: lightslategrey
+    background: lightskyblue;
 }
 .mainmenu{
     display: flex;
@@ -46,6 +46,7 @@ a:hover{
     font-weight: bold;
     padding: 20px 0;
     align-items: center;
+    justify-content: space-between;
 }
 .logo{
     flex-basis: 65%;
@@ -211,4 +212,51 @@ form label{
 .page-num{
     margin: 5px;
     font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 20px;
+}
+
+/* button {
+    background: #264b5d;
+    color: #FFF;
+    padding: 10px 40px;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+} */
+
+#id_is_published {
+    width: 20px;
+    height: 20px;
+}
+
+#id_cat {
+    font-size: 20px;
+    padding: 4px;
+}
+
+.last a {
+    display: inline;
+}
+
+.logout h2{
+    margin-bottom: 40px;
+}
+
+.logout a{
+    font-size: 20px;
+    color: antiquewhite;
+    background: darkgreen;
+    font-weight: bold;
+    padding: 20px 86px;
 }
