@@ -1,0 +1,10 @@
+#header{
+    background-color: rgb(3, 3, 218) !important;
+}
+.breadcrumbs, caption, h2{
+    background-color: blue !important;
+}
+a{
+    color: lightcyan !important;
+}
+

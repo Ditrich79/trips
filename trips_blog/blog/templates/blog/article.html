@@ -7,7 +7,7 @@
     {% if article.photo %}
         <img class="image" src="{{ article.photo.url }}" alt="">
     {% endif %}
-    {{ article.content|linebreaks }}
+    {{ article.content|safe }}
     <div id="viewport">
         <div class="slider" style="left: 0">
             <div class="slide"><img src="{{ article.picture1.url }}" alt=""></div>
