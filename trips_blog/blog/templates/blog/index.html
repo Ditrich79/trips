@@ -10,9 +10,9 @@
         <div class="text">
 
             {% if p.photo %}
-                <img class="image" src="{{ p.photo.url }}" alt="">
+                <a href="{{ p.get_absolute_url }}"><img class="image" src="{{ p.photo.url }}" alt=""></a>
             {% else %}
-                <img class="image" src="{% static 'blog/default.jpg' %}" alt="" >
+                <a href="{{ p.get_absolute_url }}"><img class="image" src="{% static 'blog/default.jpg' %}" alt="" ></a>
             {% endif %}
 
             <h2><a href="{{ p.get_absolute_url }}">{{ p.title }}</a></h2>

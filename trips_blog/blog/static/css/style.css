@@ -19,7 +19,7 @@ body{
     margin: 0 auto;
 }
 .content .wrap{
-    background: white;
+    background: rgb(71, 227, 71);
     padding: 40px;
     box-sizing: border-box;
     display: flex;
@@ -30,12 +30,18 @@ ul{
     padding: 0;
 }
 a{
-    color: grey;
+    color: purple;
     padding: 20px;
     text-decoration: none;
 }
+.sidebar a{
+    color: lightskyblue;
+}
+h1, h2{
+    color: darkblue;
+}
 a:hover{
-    color: darkgreen;
+    color: orange;
 }
 .header{
     background: lightskyblue;
@@ -68,6 +74,12 @@ a:hover{
     background: darkblue;
     font-weight: bold;
     font-size: 18px;
+}
+.sidebar{
+    background: rgb(71, 227, 71);
+}
+.main{
+    background: rgb(71, 227, 71);
 }
 .selected{
     padding: 20px;
@@ -118,6 +130,7 @@ a:hover{
 
 /* Slider */
 #viewport {
+    margin-top: 30px;
     width: 752px;
     height: 564px;
     overflow: hidden;
@@ -183,13 +196,13 @@ a:hover{
 .form-button{
     width: 100%;
     border: 2px solid darkblue;
-    background: antiquewhite;
+    background: lightskyblue;
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
 }
 .form-button:hover{
-    background: darkgreen;
+    background: orange;
 }
 form label{
     font-size: 18px;

@@ -21,12 +21,21 @@ class BlogAdmin(admin.ModelAdmin):
     search_fields = ('title', 'content')
     list_editable = ('is_published',)
     list_filter = ('is_published', 'time_created')
+    fields = ('title', 'slug', 'cat', 'content', 'photo', 'get_admin_photo', 'picture1', 'picture2', 'picture3',
+              'picture4', 'picture5', 'is_published', 'time_created', 'time_update')
+    readonly_fields = ('get_admin_photo', 'time_created', 'time_update')
+    save_on_top = True
 
     def get_html_photo(self, item):
         if item.photo:
             return mark_safe(f"<img src='{item.photo.url}' width='60'>")
 
+    def get_admin_photo(self, item):
+        if item.photo:
+            return mark_safe(f"<img src='{item.photo.url}' width='200'>")
+
     get_html_photo.short_description = 'Фотография'
+    get_admin_photo.short_description = 'Главная фотография'
 
 
 class CategoryAdmin(admin.ModelAdmin):

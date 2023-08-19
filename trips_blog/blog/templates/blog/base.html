@@ -6,13 +6,14 @@
     <meta charset="UTF-8">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'blog/favicon.png' %}">
 </head>
 <body>
 
 <div class="header">
     <div class="wrap">
         <ul class="mainmenu">
-            <li class="logo"><a href="{% url 'index' %}">Logo</a></li>
+            <li class="logo"><a href="{% url 'index' %}"><img src="{% static 'blog/logo.png' %}" alt=""></a></li>
             {% for m in menu %}
                 <li class="last"><a href="{% url m.url_name %}">{{ m.title }}</a></li>
             {% endfor %}
