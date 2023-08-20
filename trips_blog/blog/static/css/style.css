@@ -19,7 +19,7 @@ body{
     margin: 0 auto;
 }
 .content .wrap{
-    background: rgb(71, 227, 71);
+    background: rgb(232, 232, 177);
     padding: 40px;
     box-sizing: border-box;
     display: flex;
@@ -50,12 +50,13 @@ a:hover{
     display: flex;
     font-size: 25px;
     font-weight: bold;
-    padding: 20px 0;
+    padding: 5px 0;
     align-items: center;
     justify-content: space-between;
 }
 .logo{
     flex-basis: 65%;
+    padding-top: 10px;
 }
 .last{
     flex-basis: 40%;
@@ -76,10 +77,10 @@ a:hover{
     font-size: 18px;
 }
 .sidebar{
-    background: rgb(71, 227, 71);
+    background: rgb(232, 232, 177);
 }
 .main{
-    background: rgb(71, 227, 71);
+    background: rgb(232, 232, 177);
 }
 .selected{
     padding: 20px;
@@ -119,7 +120,7 @@ a:hover{
     color: darkslateblue;
 }
 .text a:hover{
-    color: darkgreen;
+    color: orangered;
 }
 .post h1{
     margin-top: 0;
@@ -188,6 +189,14 @@ a:hover{
     color: antiquewhite;
     background-color: darkblue;
 }
+.window{
+    border: 2px solid darkblue;
+    padding: 0 20px 20px;
+    margin-top: 20px;
+    background: yellowgreen;
+}
+
+/* forms */
 .form-input{
     width: 100%;
     padding: 10px;

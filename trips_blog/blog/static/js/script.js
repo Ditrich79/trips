@@ -32,3 +32,4 @@ btnPrev.addEventListener("click", function () {
     viewSliders[viewSlide].style.backgroundColor = "green";
     slider.style.left = -viewSlide * viewport + "px";
 });
+
