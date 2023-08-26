@@ -193,7 +193,7 @@ a:hover{
     border: 2px solid darkblue;
     padding: 0 20px 20px;
     margin-top: 20px;
-    background: yellowgreen;
+    background: yellow;
 }
 
 /* forms */
@@ -247,15 +247,6 @@ textarea {
 label {
     font-size: 20px;
 }
-
-/* button {
-    background: #264b5d;
-    color: #FFF;
-    padding: 10px 40px;
-    width: 100%;
-    font-size: 20px;
-    cursor: pointer;
-} */
 
 #id_is_published {
     width: 20px;

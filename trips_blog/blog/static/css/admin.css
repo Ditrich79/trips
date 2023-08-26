@@ -10,3 +10,16 @@ a{
 /* #content, #content-start{
     background-color: green !important;
 } */
+.model-group, .model-category, .model-user, .model-blog{
+    font-size: medium;
+}
+#content-main a{
+    font-size: medium;
+}
+#content h1{
+    color: white !important;
+    font-weight: 600;
+}
+/* #changelist-form p{
+    background-color: orange !important;
+} */
