@@ -19,7 +19,7 @@ body{
     margin: 0 auto;
 }
 .content .wrap{
-    background: rgb(232, 232, 177);
+    background: rgb(230, 230, 144);
     padding: 40px;
     box-sizing: border-box;
     display: flex;
@@ -39,6 +39,8 @@ a{
 }
 h1, h2{
     color: darkblue;
+    text-shadow: 1px 1px 1px powderblue, 0 0 1em powderblue, 0 0 0.2em orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 a:hover{
     color: orange;
@@ -61,7 +63,8 @@ a:hover{
 .last{
     flex-basis: 40%;
     text-align: right;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 27px;
 }
 .sidebar ul{
     width: 260px;
@@ -77,10 +80,10 @@ a:hover{
     font-size: 18px;
 }
 .sidebar{
-    background: rgb(232, 232, 177);
+    background: rgb(230, 230, 144);
 }
 .main{
-    background: rgb(232, 232, 177);
+    background: rgb(230, 230, 144);
 }
 .selected{
     padding: 20px;
@@ -118,6 +121,9 @@ a:hover{
 .text a{
     padding-left: 0;
     color: darkslateblue;
+    text-shadow: 1px 1px 1px darkslateblue, 0 0 1em plum, 0 0 0.2em orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }
 .text a:hover{
     color: orangered;
@@ -127,6 +133,11 @@ a:hover{
 }
 .post{
     font-size: 16px;
+}
+form{
+    color: darkblue;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 /* Slider */
@@ -193,7 +204,7 @@ a:hover{
     border: 2px solid darkblue;
     padding: 0 20px 20px;
     margin-top: 20px;
-    background: yellow;
+    background: rgb(255, 255, 0, 0.4);
 }
 
 /* forms */
