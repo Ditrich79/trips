@@ -57,8 +57,9 @@ a:hover{
     justify-content: space-between;
 }
 .logo{
-    flex-basis: 65%;
+    flex-basis: 20%;
     padding-top: 10px;
+    padding-left: 0;
 }
 .last{
     flex-basis: 40%;
@@ -284,4 +285,8 @@ label {
     font-weight: bold;
     padding: 20px 86px;
 }
-
+.audio{
+    margin: 0;
+    padding: 0;
+    flex-basis: 40%;
+}
