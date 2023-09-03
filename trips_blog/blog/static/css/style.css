@@ -63,7 +63,7 @@ a:hover{
 }
 .last{
     flex-basis: 40%;
-    text-align: right;
+    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 27px;
 }
@@ -254,6 +254,7 @@ textarea {
     margin-top: 6px;
     padding: 6px;
     box-sizing: border-box;
+    font-size: medium;
 }
 
 label {
@@ -288,5 +289,5 @@ label {
 .audio{
     margin: 0;
     padding: 0;
-    flex-basis: 40%;
+    flex-basis: 30%;
 }

@@ -7,11 +7,9 @@
 a{
     color: lightcyan !important;
 }
-/* #content, #content-start{
-    background-color: green !important;
-} */
 .model-group, .model-category, .model-user, .model-blog{
     font-size: medium;
+    background-color: black !important;
 }
 #content-main a{
     font-size: medium;
@@ -20,6 +18,6 @@ a{
     color: white !important;
     font-weight: 600;
 }
-/* #changelist-form p{
-    background-color: orange !important;
-} */
+#changelist-filter{
+    background-color: black !important;
+}
