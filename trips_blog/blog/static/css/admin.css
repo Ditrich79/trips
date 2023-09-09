@@ -21,3 +21,14 @@ a{
 #changelist-filter{
     background-color: black !important;
 }
+.actionlist{
+    background-color: black !important;
+}
+.submit-row, input{
+    color: whitesmoke !important;
+} 
+label{
+    font-size: 14px !important;
+    color: whitesmoke !important;
+    font-weight: 600;
+}

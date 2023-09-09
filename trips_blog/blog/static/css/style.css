@@ -291,3 +291,13 @@ label {
     padding: 0;
     flex-basis: 30%;
 }
+audio {
+    width: 280px; 
+    height: 42px; 
+}
+input, textarea{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: darkblue;
+}
